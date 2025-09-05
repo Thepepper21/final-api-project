@@ -3,6 +3,7 @@
 use App\Http\Controllers\ImageController;
 use Illuminate\Support\Facades\Route;
 
+// ge fix nako ang images kay sayop ang url
 Route::prefix('images')->group(function () {
     Route::get('/', [ImageController::class, 'index']);
     Route::post('/', [ImageController::class, 'store']);
