@@ -28,6 +28,7 @@ class ImageSeeder extends Seeder
 
             if (!Storage::disk($disk)->exists($path)) {
                 // Generate a tiny 1x1 pixel image for seeding without external APIs.
+                // finally done
                 $binary = self::generatePixel($sample['mime']);
                 Storage::disk($disk)->put($path, $binary);
             }
