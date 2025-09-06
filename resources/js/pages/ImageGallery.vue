@@ -59,6 +59,7 @@ const editForm = ref({
 const showDeleteModal = ref(false);
 const deletingImage = ref<Image | null>(null);
 
+// na error, naay kog ge fix
 const fetchImages = async (page = 1) => {
     loading.value = true;
     try {
