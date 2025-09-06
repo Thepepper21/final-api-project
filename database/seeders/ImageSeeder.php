@@ -12,7 +12,7 @@ class ImageSeeder extends Seeder
     {
         $disk = 'public';
         $baseDir = 'gallery';
-
+        // akong ge usab
         if (!Storage::disk($disk)->exists($baseDir)) {
             Storage::disk($disk)->makeDirectory($baseDir);
         }
